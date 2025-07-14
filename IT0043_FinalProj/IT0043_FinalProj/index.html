@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body class="login-page">
+  <div class="login_wrapper">
+    <div class="login_form_header">
+      <div class="titles">
+        <div class="title_login">Login</div>
+      </div>
+    </div>
+
+    <form action="#" class="login-form" autocomplete="off">
+      <div class="login_input_box">
+        <input type="text" class="input-field" id="log-email" required placeholder=" " />
+        <label for="log-email" class="label"><strong>Email</strong></label>
+        <i class='bx bx-envelope icon'></i>
+      </div>
+
+      <div class="login_input_box">
+        <input type="password" class="input-field" id="log-pass" required placeholder=" " />
+        <label for="log-pass" class="label"><strong>Password</strong></label>
+        <i class='bx  bx-lock icon'></i> 
+      </div>
+
+      <div class="login_input_box">
+        <button type="submit" class="btn-submit" id="SignInBtn">Sign In</button>
+      </div>
+    </form>
+  </div>
+
+ <script>
+    const emailInput = document.getElementById('log-email');
+    const passwordInput = document.getElementById('log-pass');
+    const signInBtn = document.getElementById('SignInBtn');
+
+    const defaultEmail = 'finalproject@gmail.com';
+    const defaultPassword = 'passorfail';
+
+    function toggleButtonState() {
+      if (emailInput.value.trim() && passwordInput.value.trim()) {
+        signInBtn.classList.add('active');
+      } else {
+        signInBtn.classList.remove('active');
+      }
+    }
+
+    emailInput.addEventListener('input', toggleButtonState);
+    passwordInput.addEventListener('input', toggleButtonState);
+
+ 
+    document.querySelector('.login-form').addEventListener('submit', function (e) {
+      e.preventDefault(); 
+
+      const emailVal = emailInput.value.trim();
+      const passwordVal = passwordInput.value.trim();
+
+      if (emailVal === defaultEmail && passwordVal === defaultPassword) {
+        window.location.href = 'main.html';
+      } else {
+        alert(`Incorrect login.\n\nHint:\nEmail: ${defaultEmail}\nPassword: ${defaultPassword}`);
+      }
+    });
+  </script>
+
+    </body>
+</html>

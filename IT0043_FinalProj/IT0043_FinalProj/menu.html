@@ -1,0 +1,1819 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chowking Menu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="main.html">
+          <img src="pictures/Chowking.png" alt="Chowking Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#promo1">Promos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tabs -->
+    <div class="menu-tabs">
+      <a href="#Chao_Fan" class="nav-link active-tab" onclick="switchMenu('Chao_Fan', event)">Chao Fan</a>
+      <a href="#Chinese-Style_Fried_Chicken" class="nav-link" onclick="switchMenu('Chinese-Style_Fried_Chicken', event)">Chinese-Style Fried Chicken</a>
+      <a href="#Lauriat" class="nav-link" onclick="switchMenu('Lauriat', event)">Lauriat</a>
+      <a href="#Chef_Special" class="nav-link" onclick="switchMenu('Chef_Special', event)">Chef Specials</a>
+      <a href="#Good_for_Sharing" class="nav-link" onclick="switchMenu('Good_for_Sharing', event)">Good for Sharing</a>
+      <a href="#Siopao_and_Siomai" class="nav-link" onclick="switchMenu('Siopao_and_Siomai', event)">Siopao & Siomai</a>
+      <a href="#Noodles" class="nav-link" onclick="switchMenu('Noodles', event)">Noodles</a>
+      <a href="#Side_Dishes" class="nav-link" onclick="switchMenu('Side_Dishes', event)">Side Dishes</a>
+      <a href="#Drinks" class="nav-link" onclick="switchMenu('Drinks', event)">Drinks</a>
+    </div>
+
+    <div class="tab-underline"></div>
+
+<!-- Menu Sections -->
+ <!-- Chao_Fan -->
+<div id="Chao_Fan" class="menu-section">
+  <div class="grid-container-menu">
+
+<div class="menu-card">
+  <img src="pictures/Siomai_Chao_Fan_Family_Platter.png" alt="Siomai Chao Fan Family Platter">
+  <h5>Siomai Chao Fan Family Platter</h5>
+
+  <div class="popup" id="popup-1">
+    <div class="overlay-popup"></div>
+    <div class="content-popup">
+      <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
+      
+      <div class="popup-body">
+        <div class="popup-image">
+          <img src="pictures/Siomai_Chao_Fan_Family_Platter.png" alt="Platter">
+        </div>
+        <div class="popup-text">
+          <h1>Siomai Chao Fan Family Platter</h1>
+          <p>Good for sharing platter of the ALL-NEW Meaty-Sahog, Wok-Sarap Pork Chao Fan and 12pcs of Siomai.
+Good for approximately 3-4 pax.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="togglePopup('popup-1')">SEE MORE</button>
+  
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Siomai_Chao_Fan.png" alt="Siomai Chao Fan">
+      <h5>Siomai Chao Fan</h5>
+        <div class="popup" id="popup-2">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
+              
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Siomai_Chao_Fan.png" alt="Platter">
+                </div>
+                <div class="popup-text">
+                  <h1>Siomai Chao Fan</h1>
+                  <p>ALL-NEW Meaty-Busog, Wok-Sarap fried rice with meat, egg, and kangkong leaves! Served with 4pcs of Siomai.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-2')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/4pc_Chicken-Chao_Fan_Platter_Bundle.png" alt="4pc Chicken-Chao Fan Platter Bundle">
+      <h5>4pc Chicken-Chao Fan Platter Bundle</h5>
+        <div class="popup" id="popup-3">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
+                
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/4pc_Chicken-Chao_Fan_Platter_Bundle.png" alt="Platter">
+                </div>
+                <div class="popup-text">
+                  <h1>4pc Chicken-Chao Fan Platter Bundle</h1>
+                  <p>A hearty platter of Wok-Sarap Chao Fan paired with 4 pieces of juicy, golden fried Chicken! Perfectly seasoned rice with savory flavors in every bite. Good for approximately 3-4 pax.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-3')">SEE MORE</button>    
+</div>
+
+<div class="menu-card">
+    <img src="pictures/4pc_Chicken-Spicy_Chao_Fan_Family_Bundle.png" alt="4pc Chicken-Spicy Chao Fan Family Bundle">
+      <h5>4pc Chicken-Spicy Chao Fan Family Bundle</h5>
+      <div class="popup" id="popup-4">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-4')">&times;</div>
+                
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/4pc_Chicken-Spicy_Chao_Fan_Family_Bundle.png" alt="Platter">
+              </div>
+              <div class="popup-text">
+                <h1>4pc Chicken-Spicy Chao Fan Family Bundle</h1>
+                <p>A flavorful platter of Spicy Wok-Sarap Chao Fan served with 4 pieces of crispy, juicy fried Chicken! A bold and savory meal with just the right kick of heat. Good for approximately 3–4 pax.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-4')">SEE MORE</button>   
+</div>
+
+<div class="menu-card">
+    <img src="pictures/4pc_Chicken-Beef_Chao_Fan_Platter_Bundle.png" alt="4pc Chicken-Beef Chao Fan Platter Bundle">
+      <h5>4pc Chicken-Beef Chao Fan Platter Bundle</h5>
+      <div class="popup" id="popup-5">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-5')">&times;</div>
+                
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/4pc_Chicken-Beef_Chao_Fan_Platter_Bundle.png" alt="4pc Chicken-Beef Chao Fan Platter Bundle">
+              </div>
+              <div class="popup-text">
+                <h1>4pc Chicken-Beef Chao Fan Platter Bundle</h1>
+                <p>A satisfying platter of Wok-Sarap Beef Chao Fan loaded with tender beef bits, served with 4 pieces of crispy, juicy fried Chicken! Packed with hearty flavor and perfect for sharing. Good for approximately 3–4 pax.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-5')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Siomai_Chao_Fan_Family_Platter.png" alt="Siomao Chao Fan Family Platter">
+      <h5>Siomao Chao Fan Family Platter</h5>
+      <div class="popup" id="popup-6">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-6')">&times;</div>
+                
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Siomai_Chao_Fan_Family_Platter.png" alt="Siomao Chao Fan Family Platter">
+              </div>
+              <div class="popup-text">
+                <h1>Siomao Chao Fan Family Platter</h1>
+                <p>A generous platter of Wok-Sarap Chao Fan served with 12 pieces of flavorful, steamed Siomai! A delicious and satisfying combo perfect for sharing. Good for approximately 3–4 pax.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-6')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_and_Sour_Pork-Chao_Fan_Family_Bundle.png" alt="Sweet & Sour Pork-Chao Fan Family Bundle">
+      <h5>Sweet & Sour Pork-Chao Fan Family Bundle</h5>
+      <div class="popup" id="popup-7">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-7')">&times;</div>
+                
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_and_Sour_Pork-Chao_Fan_Family_Bundle.png" alt="Sweet & Sour Pork-Chao Fan Family Bundle">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet & Sour Pork-Chao Fan Family Bundle</h1>
+                <p>A delicious platter of Wok-Sarap Chao Fan served with tender, crispy Sweet & Sour Pork in a tangy-savory glaze! A flavorful combo that’s perfect for sharing. Good for approximately 3–4 pax.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-7')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Siomai_Spicy_Chao_Fan.png" alt="Siomai Spicy Chao Fan">
+      <h5>Siomai Spicy Chao Fan</h5>
+      <div class="popup" id="popup-8">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-8')">&times;</div>
+                
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Siomai_Spicy_Chao_Fan.png" alt="Siomai Spicy Chao Fan">
+              </div>
+              <div class="popup-text">
+                <h1>Siomai Spicy Chao Fan</h1>
+                <p>ALL-NEW Spicy Wok-Sarap fried rice with pork, egg and kangkong leaves! Served with 4pcs of siomai.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-8')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Pork_Chao_Fan.png" alt="Pork Chao Fan">
+      <h5>Pork Chao Fan</h5>
+      <div class="popup" id="popup-9">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-9')">&times;</div>
+                
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Siomai_Spicy_Chao_Fan.png" alt="Pork Chao Fan">
+              </div>
+              <div class="popup-text">
+                <h1>Pork Chao Fan</h1>
+                <p>ALL-NEW Meaty-Busog, Wok-Sarap fried rice with meat, egg, and kangkong leaves!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-9')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Spicy_Chao_Fan.png" alt="Spicy Chao Fan">
+      <h5>Spicy Chao Fan</h5>
+      <div class="popup" id="popup-10">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-10')">&times;</div>
+                
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Siomai_Spicy_Chao_Fan.png" alt="Spicy Chao Fan">
+              </div>
+              <div class="popup-text">
+                <h1>Spicy Chao Fan</h1>
+                <p>ALL-NEW Spicy Wok-Sarap fried rice with pork, egg and kangkong leaves!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-10')">SEE MORE</button> 
+</div>
+
+  </div>
+</div>
+
+<!-- Chinese-Style_Fried_Chicken -->
+<div id="Chinese-Style_Fried_Chicken" class="menu-section">
+  <div class="grid-container-menu">
+
+<div class="menu-card">
+    <img src="pictures/Chinese-Style_Fried_Chicken_Lauriat.png" alt="Chinese-Style Fried Chicken Lauriat">
+      <h5>Chinese-Style Fried Chicken Lauriat</h5>
+      <div class="popup" id="popup-11">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-11')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Chinese-Style_Fried_Chicken_Lauriat.png" alt="Chinese-Style Fried Chicken Lauriat">
+              </div>
+              <div class="popup-text">
+                <h1>Chinese-Style Fried Chicken Lauriat</h1>
+                <p>A complete meal of Crunchier, Juicier, ALL-NEW Chinese Sarap Chicken, New Egg Fried Rice, half-serving of Pancit, Siomai, Chicharap and Buchi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-11')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/1pc-Chinese-Style_Fried_Chicken.png" alt="1pc Chinese-Style Fried Chicken">
+      <h5>1pc Chinese-Style Fried Chicken</h5>
+      <div class="popup" id="popup-12">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-12')">&times;</div>
+              
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/1pc-Chinese-Style_Fried_Chicken.png" alt="1pc Chinese-Style Fried Chicken">
+              </div>
+              <div class="popup-text">
+                <h1>1pc Chinese-Style Fried Chicken</h1>
+                <p>Crunchier, Juicier, ALL-NEW Chinese Sarap Fried Chicken paired with gravy and served with rice and Chicharap.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-12')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/8pc-Chinese-Style_Fried_Chicken.png" alt="8pc Chinese-Style Fried Chicken">
+      <h5>8pc Chinese-Style Fried Chicken</h5>
+        <div class="popup" id="popup-13">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-13')">&times;</div>
+              
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/8pc-Chinese-Style_Fried_Chicken.png" alt="8pc Chinese-Style Fried Chicken">
+                </div>
+                <div class="popup-text">
+                  <h1>8pc Chinese-Style Fried Chicken</h1>
+                  <p>8 pieces of crispy, juicy Chinese-Style Fried Chicken—marinated and fried to golden perfection with a distinct savory flavor! Perfect for sharing with family or friends. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-13')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/4pc_Chicken-Chao_Fan_Platter_Bundle.png" alt="4pc Chicken-Chao Fan Platter Bundle">
+      <h5>4pc Chicken-Chao Fan Platter Bundle</h5>
+        <div class="popup" id="popup-14">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-14')">&times;</div>
+              
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/4pc_Chicken-Chao_Fan_Platter_Bundle.png" alt="4pc Chicken-Chao Fan Platter Bundle">
+                </div>
+                <div class="popup-text">
+                  <h1>4pc Chicken-Chao Fan Platter Bundle</h1>
+                  <p>A hearty platter of Wok-Sarap Chao Fan paired with 4 pieces of juicy, golden fried Chicken! Perfectly seasoned rice with savory flavors in every bite. Good for approximately 3-4 pax.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-14')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/4pc_Chicken-Spicy_Chao_Fan_Family_Bundle.png" alt="4pc Chicken-Spicy Chao Fan Family Bundle">
+      <h5>4pc Chicken-Spicy Chao Fan Family Bundle</h5>
+        <div class="popup" id="popup-15">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-15')">&times;</div>
+              
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/4pc_Chicken-Spicy_Chao_Fan_Family_Bundle.png" alt="4pc Chicken-Spicy Chao Fan Family Bundle">
+                </div>
+                <div class="popup-text">
+                  <h1>4pc Chicken-Spicy Chao Fan Family Bundle</h1>
+                  <p>A flavorful platter of Spicy Wok-Sarap Chao Fan served with 4 pieces of crispy, juicy fried Chicken! A bold and savory meal with just the right kick of heat. Good for approximately 3–4 pax.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-15')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/4pc_Chicken-Beef_Chao_Fan_Platter_Bundle.png" alt="4pc Chicken-Beef Chao Fan Platter Bundle">
+      <h5>4pc Chicken-Beef Chao Fan Platter Bundle</h5>
+        <div class="popup" id="popup-16">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-16')">&times;</div>
+              
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/4pc_Chicken-Beef_Chao_Fan_Platter_Bundle.png" alt="4pc Chicken-Beef Chao Fan Platter Bundle">
+                </div>
+                <div class="popup-text">
+                  <h1>4pc Chicken-Beef Chao Fan Platter Bundle</h1>
+                  <p>A satisfying platter of Wok-Sarap Beef Chao Fan loaded with tender beef bits, served with 4 pieces of crispy, juicy fried Chicken! Packed with hearty flavor and perfect for sharing. Good for approximately 3–4 pax.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-16')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Family_Lauriat_(4 Pax).png" alt="Family Lauriat (4 Pax)">
+      <h5>Family Lauriat (4 Pax)</h5>
+        <div class="popup" id="popup-17">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-17')">&times;</div>
+              
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Family_Lauriat_(4 Pax).png" alt="Family Lauriat (4 Pax)">
+                </div>
+                <div class="popup-text">
+                  <h1>Family Lauriat (4 Pax)</h1>
+                  <p>A Chowking Feast of 6 Best Sellers: Chicken, Pancit, Egg Fried Rice, Siomai, Buchi, Chicarap! Good for 4 Pax</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-17')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Fried_Chicken-Pancit_Family_Platter.png" alt="Fried Chicken-Pancit Family Platter">
+      <h5>Fried Chicken-Pancit Family Platter</h5>
+        <div class="popup" id="popup-18">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-18')">&times;</div>
+              
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Fried_Chicken-Pancit_Family_Platter.png" alt="Fried Chicken-Pancit Family Platter">
+                </div>
+                <div class="popup-text">
+                  <h1>Fried Chicken-Pancit Family Platter</h1>
+                  <p>A festive platter of savory Pancit Canton topped with vegetables and meat, served with 4 pieces of crispy, juicy Fried Chicken! A classic, flavorful combo perfect for celebrations or everyday sharing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-18')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/4pc_Chinese-Style_Fried_Chicken_Family_Box.png" alt="4pc Chinese-Style Fried Chicken Family Box">
+        <h5>4pc Chinese-Style Fried Chicken Family Box</h5>
+        <div class="popup" id="popup-19">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-19')">&times;</div>
+              
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/4pc_Chinese-Style_Fried_Chicken_Family_Box.png" alt="4pc Chinese-Style Fried Chicken Family Box">
+                </div>
+                <div class="popup-text">
+                  <h1>4pc Chinese-Style Fried Chicken Family Box</h1>
+                  <p>4 pieces of crispy, juicy Chinese-Style Fried Chicken, perfectly seasoned and fried to golden perfection! A satisfying meal that’s great for sharing with family or friends. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-19')">SEE MORE</button>
+</div>
+  </div>
+</div>
+
+<!-- Lauriat -->
+<div id="Lauriat" class="menu-section">
+  <div class="grid-container-menu">
+
+<div class="menu-card">
+    <img src="pictures/Chinese-Style_Fried_Chicken_Lauriat.png" alt="Chinese-Style Fried Chicken Lauriat">
+      <h5>Chinese-Style Fried Chicken Lauriat</h5>
+      <div class="popup" id="popup-20">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-20')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Chinese-Style_Fried_Chicken_Lauriat.png" alt="Chinese-Style Fried Chicken Lauriat">
+              </div>
+              <div class="popup-text">
+                <h1>Chinese-Style Fried Chicken Lauriat</h1>
+                <p>A complete meal of Crunchier, Juicier, ALL-NEW Chinese Sarap Chicken, New Egg Fried Rice, half-serving of Pancit, Siomai, Chicharap and Buchi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-20')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Chix_and_Sauce_Lauriat.png" alt="Chix and Sauce Lauriat">
+      <h5>Chix & Sauce Lauriat</h5>
+      <div class="popup" id="popup-21">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-21')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Chix_and_Sauce_Lauriat.png" alt="Chix & Sauce Lauriat">
+              </div>
+              <div class="popup-text">
+                <h1>Chix & Sauce Lauriat</h1>
+                <p>Crunchy chicken chunks with two sauces. Served with the NEW egg fried rice, half-serving pancit canton, siomai, chicharap and buchi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-21')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_n_Sour_Chicken_Lauriat.png" alt="Sweet n Sour Chicken Lauriat">
+      <h5>Sweet ‘n’ Sour Chicken Lauriat</h5>
+      <div class="popup" id="popup-22">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-22')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_n_Sour_Chicken_Lauriat.png" alt="Sweet 'n' Sour Chicken Lauriat">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet 'n' Sour Chicken Lauriat</h1>
+                <p>Sweet 'n' Sour Chicken served with egg fried rice, half-serving pancit canton, siomai, chicharap & buchi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-22')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_n_Sour_Pork_Lauriat.png" alt="Sweet n Sour Pork Lauriat">
+      <h5>Sweet ‘n’ Sour Pork Lauriat</h5>
+      <div class="popup" id="popup-23">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-23')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_n_Sour_Pork_Lauriat.png" alt="Sweet ‘n’ Sour Pork Lauriat">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet ‘n’ Sour Pork Lauriat</h1>
+                <p>Sweet 'n' Sour Pork served with egg fried rice, half-serving pancit canton, siomai, chicharap & buchi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-23')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_n_Sour_Fish_Lauriat.png" alt="Sweet n Sour Fish Lauriat">
+      <h5>Sweet ‘n’ Sour Fish Lauriat</h5>
+      <div class="popup" id="popup-24">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-24')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_n_Sour_Fish_Lauriat.png" alt="Sweet ‘n’ Sour Fish Lauriat">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet ‘n’ Sour Fish Lauriat</h1>
+                <p>Sweet 'n' Sour Pork served with egg fried rice, half-serving pancit canton, siomai, chicharap & buchi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-24')">SEE MORE</button> 
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Pancit_Canton.png" alt="Pancit Canton">
+      <h5>Pancit Canton</h5>
+      <div class="popup" id="popup-25">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-25')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Pancit_Canton.png" alt="Pancit Canton">
+              </div>
+              <div class="popup-text">
+                <h1>Pancit Canton</h1>
+                <p>NEW! Pancit Canton made with fresh egg noodles, real chicken strips, sliced chicken balls, and vegetables, tossed in savory canton sauce.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-25')">SEE MORE</button>
+</div>
+
+
+  </div>
+</div>
+
+<!-- Chef_Special -->
+<div id="Chef_Special" class="menu-section">
+  <div class="grid-container-menu">
+
+<div class="menu-card">
+    <img src="pictures/Chix_and_Sauce.png" alt="Chix & Sauce">
+      <h5>Chix & Sauce</h5>
+      <div class="popup" id="popup-26">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-26')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Chix_and_Sauce.png" alt="Chix & Sauce">
+              </div>
+              <div class="popup-text">
+                <h1>Chix & Sauce</h1>
+                <p>Crunchy chicken chunks made from 100% real chicken, served with steamed rice and two different sauces on the side (Signature Sauce and Asian Spicy Sauce)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-26')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_n_Sour_Chicken.png" alt="Sweet ‘n’ Sour Chicken">
+      <h5>Sweet ‘n’ Sour Chicken</h5>
+      <div class="popup" id="popup-27">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-27')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_n_Sour_Chicken.png" alt="Sweet ‘n’ Sour Chicken">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet ‘n’ Sour Chicken</h1>
+                <p>Crunchy chicken chunks in signature sweet sour blend.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-27')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_n_Sour_Pork.png" alt="Sweet ‘n’ Sour Pork">
+      <h5>Sweet ‘n’ Sour Pork</h5>
+      <div class="popup" id="popup-28">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-28')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_n_Sour_Pork.png" alt="Sweet ‘n’ Sour Pork">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet ‘n’ Sour Pork</h1>
+                <p>Tender pork slices in signature sweet sour blend.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-28')">SEE MORE</button>
+</div>
+  
+<div class="menu-card">
+    <img src="pictures/Sweet_n_Sour Fish.png" alt="Sweet ‘n’ Sour Fish">
+      <h5>Sweet ‘n’ Sour Fish</h5>
+      <div class="popup" id="popup-29">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-29')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_n_Sour Fish.png" alt="Sweet ‘n’ Sour Fish">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet ‘n’ Sour Fish</h1>
+                <p>Soft fish fillet with slight crisp coated in signature sweet sour blend.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-29')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Lumpiang_Shanghai_Rice_Meal.png" alt="Lumpiang Shanghai Rice Meal">
+      <h5>Lumpiang Shanghai Rice Meal</h5>
+      <div class="popup" id="popup-30">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-30')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Lumpiang_Shanghai_Rice_Meal.png" alt="Lumpiang Shanghai Rice Meal">
+              </div>
+              <div class="popup-text">
+                <h1>Lumpiang Shanghai Rice Meal</h1>
+                <p>Deep-fried rolls of ground pork and shrimp combined with carrots, onion, and spices, served with sweet and sour dipping sauce.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-30')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Braised_Beef_with_Rice.png" alt="Braised Beef with Rice">
+      <h5>Braised Beef with Rice</h5>
+      <div class="popup" id="popup-31">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-31')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Braised_Beef_with_Rice.png" alt="Braised Beef with Rice">
+              </div>
+              <div class="popup-text">
+                <h1>Braised Beef with Rice</h1>
+                <p>Slow-cooked Beef simmered in savory sauce on top of steamed rice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-31')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Braised_Beef_with_Rice_Combo.png" alt="Braised Beef with Rice Combo">
+      <h5>Braised Beef with Rice Combo</h5>
+      <div class="popup" id="popup-32">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-32')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Braised_Beef_with_Rice_Combo.png" alt="Braised Beef with Rice Combo">
+              </div>
+              <div class="popup-text">
+                <h1>Braised Beef with Rice Combo</h1>
+                <p>Slow-cooked Beef simmered in savory sauce on top of steamed rice. Perfectly paired with Wonton Soup.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-32')">SEE MORE</button>
+</div>
+
+  </div>
+</div>
+
+<!-- Good_for_Sharing -->
+<div id="Good_for_Sharing" class="menu-section">
+  <div class="grid-container-menu">
+
+<div class="menu-card">
+    <img src="pictures/Spicy_Chao_Fan_Platter.png" alt="Spicy Chao Fan Platter">
+      <h5>Spicy Chao Fan Platter</h5>
+      <div class="popup" id="popup-33">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-33')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Spicy_Chao_Fan_Platter.png" alt="Spicy Chao Fan Platter">
+              </div>
+              <div class="popup-text">
+                <h1>Spicy Chao Fan Platter</h1>
+                <p>Crunchy chicken chunks made from 100% real chicken, served with steamed rice and two different sauces on the side (Signature Sauce and Asian Spicy Sauce)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-33')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Buchi_Group_Platter.png" alt="Buchi Group Platter">
+      <h5>Buchi Group Platter</h5>
+      <div class="popup" id="popup-34">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-34')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Buchi_Group_Platter.png" alt="Buchi Group Platter">
+              </div>
+              <div class="popup-text">
+                <h1>Buchi Group Platter</h1>
+                <p>A delightful platter of golden, crispy Buchi—soft and chewy rice balls filled with sweet mung bean paste and coated in sesame seeds! Perfect for sharing as a sweet treat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-34')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Lumpiang_Shanghai_Group_Platter.png" alt="Lumpiang Shanghai Group Platter">
+      <h5>Lumpiang Shanghai Group Platter</h5>
+      <div class="popup" id="popup-35">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-35')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Lumpiang_Shanghai_Group_Platter.png" alt="Lumpiang Shanghai Group Platter">
+              </div>
+              <div class="popup-text">
+                <h1>Lumpiang Shanghai Group Platter</h1>
+                <p>A crispy and flavorful platter of golden-brown Lumpiang Shanghai—bite-sized rolls filled with savory pork and vegetables, perfect for dipping and sharing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-35')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Fried_Pork_Siomai_Group_Platter.png" alt="Fried Pork Siomai Group Platter">
+      <h5>Fried Pork Siomai Group Platter</h5>
+      <div class="popup" id="popup-36">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-36')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Fried_Pork_Siomai_Group_Platter.png" alt="Fried Pork Siomai Group Platter">
+              </div>
+              <div class="popup-text">
+                <h1>Fried Pork Siomai Group Platter</h1>
+                <p>A savory platter of golden Fried Pork Siomai—crispy on the outside, juicy on the inside, and packed with rich pork flavor! Perfect for sharing with family or friends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-36')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Dimsum_Mix_Platter.png" alt="Dimsum Mix Platter">
+      <h5>Dimsum Mix Platter</h5>
+      <div class="popup" id="popup-37">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-37')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Dimsum_Mix_Platter.png" alt="Dimsum Mix Platter">
+              </div>
+              <div class="popup-text">
+                <h1>Dimsum Mix Platter</h1>
+                <p>12pcs of delicious variety of dimsum favorites! 4pcs Siomai, 4pcs Lumpiang Shanghai, and Buchi that's good for sharing!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-37')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_and_Sour_Chicken_Group_Platter.png" alt="Sweet & Sour Chicken Group Platter">
+      <h5>Sweet & Sour Chicken Group Platter</h5>
+      <div class="popup" id="popup-38">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-38')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_and_Sour_Chicken_Group_Platter.png" alt="Sweet & Sour Chicken Group Platter">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet & Sour Chicken Group Platter</h1>
+                <p>A generous platter of crispy, tender chicken tossed in a vibrant sweet and sour sauce with bell peppers and pineapple! Bursting with flavor and perfect for sharing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-38')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_and_Sour_Fish_Group_Platter.png" alt="Sweet & Sour Fish Group Platter">
+      <h5>Sweet & Sour Fish Group Platter</h5>
+      <div class="popup" id="popup-39">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-39')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_and_Sour_Fish_Group_Platter.png" alt="Sweet & Sour Fish Group Platter">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet & Sour Fish Group Platter</h1>
+                <p>A delicious platter of crispy fish fillets coated in a tangy-sweet sauce with bell peppers and pineapple! A light yet flavorful dish perfect for sharing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-39')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_and_Sour_Pork_Group_Platter.png" alt="Sweet & Sour Pork Group Platter">
+      <h5>Sweet & Sour Pork Group Platter</h5>
+      <div class="popup" id="popup-40">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-40')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_and_Sour_Pork_Group_Platter.png" alt="Sweet & Sour Pork Group Platter">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet & Sour Pork Group Platter</h1>
+                <p>A hearty platter of crispy pork bites glazed in a rich sweet and sour sauce with bell peppers and pineapple! A bold and flavorful classic that’s perfect for sharing. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-40')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_and_Sour_Pork-Spicy_Chao_Fan_Family_Bundle.png" alt="Sweet & Sour Pork-Spicy Chao Fan Family Bundle">
+      <h5>Sweet & Sour Pork-Spicy Chao Fan Family Bundle</h5>
+      <div class="popup" id="popup-41">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-41')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_and_Sour_Pork-Spicy_Chao_Fan_Family_Bundle.png" alt="Sweet & Sour Pork-Spicy Chao Fan Family Bundle">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet & Sour Pork-Spicy Chao Fan Family Bundle</h1>
+                <p>A bold and flavorful combo of Spicy Wok-Sarap Chao Fan paired with crispy Sweet & Sour Pork in a tangy glaze with bell peppers and pineapple! A satisfying meal with a kick, perfect for sharing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-41')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_and_Sour_Pork-Chao_Fan_Family_Bundle.png" alt="Sweet & Sour Pork-Chao Fan Family Bundle">
+      <h5>Sweet & Sour Pork-Chao Fan Family Bundle</h5>
+      <div class="popup" id="popup-42">
+        <div class="overlay-popup"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup('popup-42')">&times;</div>
+                  
+            <div class="popup-body">
+              <div class="popup-image">
+                <img src="pictures/Sweet_and_Sour_Pork-Chao_Fan_Family_Bundle.png" alt="Sweet & Sour Pork-Chao Fan Family Bundle">
+              </div>
+              <div class="popup-text">
+                <h1>Sweet & Sour Pork-Chao Fan Family Bundle</h1>
+                <p>A delicious bundle of Wok-Sarap Chao Fan paired with crispy Sweet & Sour Pork tossed in a rich, tangy sauce with bell peppers and pineapple! A satisfying, flavor-packed meal perfect for sharing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <button onclick="togglePopup('popup-42')">SEE MORE</button>
+</div>
+  </div>
+</div>  
+
+<!-- Siopao and Siomai -->
+<div id="Siopao_and_Siomai" class="menu-section">
+  <div class="grid-container-menu">
+
+<div class="menu-card">
+    <img src="pictures/3pc_Siopao_Box.png" alt="3pc Siopao Box">
+        <h5>3pc Siopao Box</h5>
+        <div class="popup" id="popup-43">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-43')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/3pc_Siopao_Box.png" alt="3pc Siopao Box">
+                </div>
+                <div class="popup-text">
+                  <h1>3pc Siopao Box</h1>
+                  <p>A box of 3 regular siopao, perfect for pasalubong.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-43')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Dimsum_Mix_Platter.png" alt="Dimsum Mix Platter">
+        <h5>Dimsum Mix Platter</h5>
+        <div class="popup" id="popup-44">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-44')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Dimsum_Mix_Platter.png" alt="Dimsum Mix Platter">
+                </div>
+                <div class="popup-text">
+                  <h1>Dimsum Mix Platter</h1>
+                  <p>12pcs of delicious variety of dimsum favorites! 4pcs Siomai, 4pcs Lumpiang Shanghai, and Buchi that's good for sharing!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-44')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Fried_Pork_Siomai_Group_Platter.png" alt="Fried Pork Siomai Group Platter">
+      <h5>Fried Pork Siomai Group Platter</h5>
+        <div class="popup" id="popup-45">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-45')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Fried_Pork_Siomai_Group_Platter.png" alt="Fried Pork Siomai Group Platter">
+                </div>
+                <div class="popup-text">
+                  <h1>Fried Pork Siomai Group Platter</h1>
+                  <p>12pcs of savory Fried Pork Siomai goodness! A platter packed with crispy, flavorful siomai that's perfect for sharing with family or friends. Great for group meals, snacks, or party platters!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-45')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Lumpiang_Shanghai_Group_Platter.png" alt="Lumpiang Shanghai Group Platter">
+      <h5>Lumpiang Shanghai Group Platter</h5>
+        <div class="popup" id="popup-46">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-46')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Lumpiang_Shanghai_Group_Platter.png" alt="Lumpiang Shanghai Group Platter">
+                </div>
+                <div class="popup-text">
+                  <h1>Lumpiang Shanghai Group Platter</h1>
+                  <p>12pcs of crispy and flavorful Fried Pork Siomai! Golden brown and perfectly seasoned, this platter is great for sharing and ideal for barkada bonding, office lunch, or family cravings!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-46')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Buchi_Group_Platter.png" alt="Buchi Group Platter">
+        <h5>Buchi Group Platter</h5>
+        <div class="popup" id="popup-47">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-47')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Buchi_Group_Platter.png" alt="Buchi Group Platter">
+                </div>
+                <div class="popup-text">
+                  <h1>Buchi Group Platter</h1>
+                  <p>8pcs of sweet and chewy Buchi delight! Crispy on the outside with a soft, tasty filling inside—perfect for sharing with family and friends. A classic dessert treat for any occasion!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-47')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Chunky_Asado_Siopao.png" alt="Chunky Asado Siopao">
+        <h5>Chunky Asado Siopao</h5>
+        <div class="popup" id="popup-48">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-48')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Chunky_Asado_Siopao.png" alt="Chunky Asado Siopao">
+                </div>
+                <div class="popup-text">
+                  <h1>Chunky Asado Siopao</h1>
+                  <p>Slow-Roasted, Hong Kong-Style Asado Sarap pork and flavorful sauce in hot steamed bun Fresh-out-of-steamer goodness!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-48')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Bola-Bola_Siopao_Supreme.png" alt="Bola-Bola Siopao Supreme">
+      <h5>Bola-Bola Siopao Supreme</h5>
+         <div class="popup" id="popup-49">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-49')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Bola-Bola_Siopao_Supreme.png" alt="Bola-Bola Siopao Supreme">
+                </div>
+                <div class="popup-text">
+                  <h1>Bola-Bola Siopao Supreme</h1>
+                  <p>Minced meat filling with Salted Egg and Spring Onions in a hot, steamed bun. Hot Sauce upon request, please indicate in check-out notes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-49')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/2pc_Siomai.png" alt="2pc Siomai">
+      <h5>2pc Siomai</h5>
+         <div class="popup" id="popup-50">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-50')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/2pc_Siomai.png" alt="2pc Siomai">
+                </div>
+                <div class="popup-text">
+                  <h1>2pc Siomai</h1>
+                  <p>Dumplings of ground meat and spices served with a special soy-based dippign sauce. Can be steamed or fried.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-50')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/4pcs_Siomai.png" alt="4pcs Siomai">
+      <h5>4pcs Siomai</h5>
+         <div class="popup" id="popup-51">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-51')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/4pcs_Siomai.png" alt="4pcs Siomai">
+                </div>
+                <div class="popup-text">
+                  <h1>4pcs Siomai</h1>
+                  <p>Dumplings of ground meat and spices served with a special soy-based dippign sauce. Can be steamed or fried.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-51')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/4pc_Lumpiang_Shanghai.png" alt="4pc Lumpiang Shanghai">
+      <h5>4pc Lumpiang Shanghai</h5>
+         <div class="popup" id="popup-52">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-52')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/4pc_Lumpiang_Shanghai.png" alt="4pc Lumpiang Shanghai">
+                </div>
+                <div class="popup-text">
+                  <h1>4pc Lumpiang Shanghai</h1>
+                  <p>Packed with flavorful ground meat and vegetables, fried to golden perfection, perfect as a snack, side, or tasty add-on to any meal!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-52')">SEE MORE</button>
+</div>
+  </div>
+</div>
+
+<!-- Noodles -->
+<div id="Noodles" class="menu-section">
+  <div class="grid-container-menu">
+
+<div class="menu-card">
+    <img src="pictures/Pancit_Canton_with_1pc_Chinese-Style_Fried_Chicken_w_Drink.png" alt="Pancit Canton with 1pc Chinese-Style Fried Chicken w Drink">
+      <h5>Pancit Canton with 1pc Chinese-Style Fried Chicken w/ Drink</h5>
+         <div class="popup" id="popup-53">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-53')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Pancit_Canton_with_1pc_Chinese-Style_Fried_Chicken_w_Drink.png" alt="Pancit Canton with 1pc Chinese-Style Fried Chicken w/ Drink">
+                </div>
+                <div class="popup-text">
+                  <h1>Pancit Canton with 1pc Chinese-Style Fried Chicken w/ Drink</h1>
+                  <p>New! Pancit Canton made with fresh egg noodles paired with Crunchier, Juicier, All-New Chinese Sarap Chicken and Drink.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-53')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Wonton_Mami_with_Asado_Siopao.png" alt="Wonton Mami with Asado Siopao">
+      <h5>Wonton Mami with Asado Siopao</h5>
+         <div class="popup" id="popup-54">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-54')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Wonton_Mami_with_Asado_Siopao.png" alt="Wonton Mami with Asado Siopao">
+                </div>
+                <div class="popup-text">
+                  <h1>Wonton Mami with Asado Siopao</h1>
+                  <p>Regular Wonton Mami paired with the best-selling Asado Siopao.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-54')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Wonton_Mami.png" alt="Wonton Mami">
+      <h5>Wonton Mami</h5>
+         <div class="popup" id="popup-55">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-55')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Wonton_Mami.png" alt="Wonton Mami">
+                </div>
+                <div class="popup-text">
+                  <h1>Wonton Mami</h1>
+                  <p>Fresh egg noodles in richer, more flavorful soup and topped with siksik-sarap meaty wonton balls.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-55')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Beef_Mami.png" alt="Beef Mami">
+      <h5>Beef Mami</h5>
+         <div class="popup" id="popup-56">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-56')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Beef_Mami.png" alt="Beef Mami">
+                </div>
+                <div class="popup-text">
+                  <h1>Beef Mami</h1>
+                  <p>Richly flavored beef noodle soup with premium-cut beef cubes, fresh egg noodles and Taiwan pechay, all garnished with leeks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-56')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Beef_Wonton_Mami.png" alt="Beef Wonton Mami">
+      <h5>Beef Wonton Mami</h5>
+         <div class="popup" id="popup-57">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-57')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Beef_Wonton_Mami.png" alt="Beef Wonton Mami">
+                </div>
+                <div class="popup-text">
+                  <h1>Beef Wonton Mami</h1>
+                  <p>Richly flavored beef noodle soup with premium-cut beef cubes, juicy wonton balls, fresh egg noodles, Taiwan pechay and leeks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-57')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Pancit_Canton.png" alt="Pancit Canton">
+      <h5>Pancit Canton</h5>
+         <div class="popup" id="popup-58">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-58')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Pancit_Canton.png" alt="Pancit Canton">
+                </div>
+                <div class="popup-text">
+                  <h1>Pancit Canton</h1>
+                  <p>NEW! Pancit Canton made with fresh egg noodles, real chicken strips, sliced chicken balls, and vegetables, tossed in savory canton sauce.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-58')">SEE MORE</button>
+</div>
+  </div>
+</div>
+
+<!-- Side_Dishes -->
+<div id="Side_Dishes" class="menu-section">
+  <div class="grid-container-menu">
+
+<div class="menu-card">
+    <img src="pictures/Kangkong_w_Chinese_Bagoong.png" alt="Kangkong w Chinese Bagoong">
+      <h5>Kangkong w/ Chinese Bagoong</h5>
+         <div class="popup" id="popup-59">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-59')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Kangkong_w_Chinese_Bagoong.png" alt="Kangkong w/ Chinese Bagoong">
+                </div>
+                <div class="popup-text">
+                  <h1>Kangkong w/ Chinese Bagoong</h1>
+                  <p>Fresh and flavorful Kangkong sautéed with rich Chinese Bagoong! A delicious blend of earthy greens and umami-packed shrimp paste, perfect as a side dish or savory rice partner!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-59')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Chicharap.png" alt="Chicharap">
+      <h5>Chicharap</h5>
+         <div class="popup" id="popup-60">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-60')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Chicharap.png" alt="Chicharap">
+                </div>
+                <div class="popup-text">
+                  <h1>Chicharap</h1>
+                  <p>Crunchy and tasty Chicharap goodness! Light, crispy crackers that are perfect for snacking or pairing with your favorite meals. A crowd favorite that's always fun to munch on!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-60')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Buchi.png" alt="Buchi">
+        <h5>Buchi</h5>
+         <div class="popup" id="popup-61">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-61')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Buchi.png" alt="Buchi">
+                </div>
+                <div class="popup-text">
+                  <h1>Buchi</h1>
+                  <p>Golden, chewy, and delightfully sweet Buchi! Crispy sesame-coated balls with a soft, flavorful filling—perfect as a dessert or sweet snack to end your meal on a high note!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-61')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Wonton_Soup.png" alt="Wonton_Soup">
+      <h5>Wonton Soup</h5>
+         <div class="popup" id="popup-62">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-62')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Wonton_Soup.png" alt="Wonton Soup">
+                </div>
+                <div class="popup-text">
+                  <h1>Wonton Soup</h1>
+                  <p>Warm and comforting Wonton Soup! Filled with tasty dumplings in a savory, flavorful broth—perfect for a light meal or a cozy starter to satisfy your cravings!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-62')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Extra_Plain_Rice.png" alt="Extra Plain Rice">
+      <h5>Extra Plain Rice</h5>
+         <div class="popup" id="popup-63">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-63')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Extra_Plain_Rice.png" alt="Extra Plain Rice">
+                </div>
+                <div class="popup-text">
+                  <h1>Extra Plain Rice</h1>
+                  <p>The perfect partner to any dish. Simple, satisfying, and always a must-have on the table.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-63')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Extra_Egg_Fried_Rice.png" alt="Extra Egg Fried Rice">
+      <h5>Extra Egg Fried Rice</h5>
+         <div class="popup" id="popup-64">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-64')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Extra_Egg_Fried_Rice.png" alt="Extra Egg Fried Rice">
+                </div>
+                <div class="popup-text">
+                  <h1>Extra Egg Fried Rice</h1>
+                  <p>Our Extra Egg Fried Rice is loaded with a generous helping of eggs, perfectly cooked with aromatic rice and a hint of savory seasoning. A delightfully satisfying dish that stands out as both a hearty side or a fulfilling meal on its own!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-64')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Asian_Spicy_Sauce.png" alt="Asian Spicy Sauce">
+      <h5>Asian Spicy Sauce</h5>
+         <div class="popup" id="popup-65">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-65')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Asian_Spicy_Sauce.png" alt="Asian Spicy Sauce">
+                </div>
+                <div class="popup-text">
+                  <h1>Asian Spicy Sauce</h1>
+                  <p>A perfect blend of chili, garlic, and savory spices—great for dipping, drizzling, or adding a fiery kick to your favorite dishes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-65')">SEE MORE</button>
+</div>
+
+  </div>
+</div>
+
+<!-- Drinks -->
+<div id="Drinks" class="menu-section">
+  <div class="grid-container-menu">
+
+<div class="menu-card">
+    <img src="pictures/Milksha_Perfect_Pair_(Good for 2).png" alt="Milksha Perfect Pair (Good for 2)">
+      <h5>Milksha Perfect Pair (Good for 2)</h5>
+         <div class="popup" id="popup-66">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-66')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Milksha_Perfect_Pair_(Good for 2).png" alt="Milksha Perfect Pair (Good for 2)">
+                </div>
+                <div class="popup-text">
+                  <h1>Milksha Perfect Pair (Good for 2)</h1>
+                  <p>Enjoy double the delight with two handcrafted Milksha drinks, made with premium ingredients and perfect for sharing. A refreshing treat for you and someone special.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-66')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Milksha_Sampler_Set_(Good for 4).png" alt="Milksha Sampler Set (Good for 4)">
+        <h5>Milksha Sampler Set (Good for 4)</h5>
+         <div class="popup" id="popup-67">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-67')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Milksha_Sampler_Set_(Good for 4).png" alt="Milksha Sampler Set (Good for 4)">
+                </div>
+                <div class="popup-text">
+                  <h1>Milksha Sampler Set (Good for 4)</h1>
+                  <p>A perfect treat for groups! Enjoy four handcrafted Milksha drinks featuring a mix of bestsellers and fan favorites—ideal for sharing with friends or family. Refreshing, fun, and made to be enjoyed together.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-67')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Siopao_+_Milksha_Bundle.png" alt="Siopao + Milksha Bundle">
+        <h5>Siopao + Milksha Bundle</h5>
+         <div class="popup" id="popup-68">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-68')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Siopao_+_Milksha_Bundle.png" alt="Siopao + Milksha Bundle">
+                </div>
+                <div class="popup-text">
+                  <h1>Siopao + Milksha Bundle</h1>
+                  <p>Add-onstarts at P96! Enjoy your Chowking favorites with Milksha. Pair your Chunky Asado Siopao wih Honey Pearl Black Tea Latte, Black Tea Latter with Pudding, Wintermelon Lemon, Valrhona Cocoa Milk, or Signature Taro Milk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-68')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Siomai_Chao_Fan_+_Milksha_Bundle.png" alt="Siomai Chao Fan + Milksha Bundle">
+        <h5>Siomai Chao Fan + Milksha Bundle</h5>
+         <div class="popup" id="popup-69">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-69')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Siomai_Chao_Fan_+_Milksha_Bundle.png" alt="Siomai Chao Fan + Milksha Bundle">
+                </div>
+                <div class="popup-text">
+                  <h1>Siomai Chao Fan + Milksha Bundle</h1>
+                  <p>Add-onstarts at P96! Enjoy your Chowking favorites with Milksha. Pair your Siomai Chao Fan wih Honey Pearl Black Tea Latte, Black Tea Latter with Pudding, Wintermelon Lemon, Valrhona Cocoa Milk, or Signature Taro Milk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-69')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Fried_Chicken_Lauriat_+_Milksha_Bundle.png" alt="Fried Chicken Lauriat + Milksha Bundle">
+        <h5>Fried Chicken Lauriat + Milksha Bundle</h5>
+         <div class="popup" id="popup-70">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-70')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Fried_Chicken_Lauriat_+_Milksha_Bundle.png" alt="Fried Chicken Lauriat + Milksha Bundle">
+                </div>
+                <div class="popup-text">
+                  <h1>Fried Chicken Lauriat + Milksha Bundle</h1>
+                  <p>Add-onstarts at P96! Enjoy your Chowking favorites with Milksha. Pair your Fried Chicken Lauriat wih Honey Pearl Black Tea Latte, Black Tea Latter with Pudding, Wintermelon Lemon, Valrhona Cocoa Milk, or Signature Taro Milk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-70')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Sweet_and_Sour_Pork_Lauriat_+_Milksha.png" alt="Sweet & Sour Pork Lauriat + Milksha">
+      <h5>Sweet & Sour Pork Lauriat + Milksha</h5>
+         <div class="popup" id="popup-71">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-71')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Sweet_and_Sour_Pork_Lauriat_+_Milksha.png" alt="Sweet & Sour Pork Lauriat + Milksha">
+                </div>
+                <div class="popup-text">
+                  <h1>Sweet & Sour Pork Lauriat + Milksha</h1>
+                  <p>Add-onstarts at P96! Enjoy your Chowking favorites with Milksha. Pair your Sweet & Sour Pork Lauriat wih Honey Pearl Black Tea Latte, Black Tea Latter with Pudding, Wintermelon Lemon, Valrhona Cocoa Milk, or Signature Taro Milk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-71')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Honey_Pearl_Black_Tea_Latte.png" alt="Honey Pearl Black Tea Latte">
+      <h5>Honey Pearl Black Tea Latte</h5>
+         <div class="popup" id="popup-72">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-72')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Honey_Pearl_Black_Tea_Latte.png" alt="Honey Pearl Black Tea Latte">
+                </div>
+                <div class="popup-text">
+                  <h1>Honey Pearl Black Tea Latte</h1>
+                  <p>Milksha's bestselling milk tea with its signature honey pearls, made with premium black tea blended with fresh milk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-72')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Black_Tea_Latte_with_Pudding.png" alt="Black Tea Latte with Pudding">
+      <h5>Black Tea Latte with Pudding</h5>
+         <div class="popup" id="popup-73">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-73')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Black_Tea_Latte_with_Pudding.png" alt="Black Tea Latte with Pudding">
+                </div>
+                <div class="popup-text">
+                  <h1>Black Tea Latte with Pudding</h1>
+                  <p>Milksha's bestselling milk tea with pudding, made with premium black tea blended with fresh milk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-73')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Valrhona_Cocoa_Milk_with_Honey_Pearls.png" alt="Valrhona Cocoa Milk with Honey Pearls">
+      <h5>Valrhona Cocoa Milk with Honey Pearls</h5>
+         <div class="popup" id="popup-74">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-74')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Valrhona_Cocoa_Milk_with_Honey_Pearls.png" alt="Valrhona Cocoa Milk with Honey Pearls">
+                </div>
+                <div class="popup-text">
+                  <h1>Valrhona Cocoa Milk with Honey Pearls</h1>
+                  <p>Milksha's luscious cocoa milk made with premium Valrhona cocoa from France and fresh milk topped with signautre honey pearls.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-74')">SEE MORE</button>
+</div>
+
+<div class="menu-card">
+    <img src="pictures/Valrhona_Cocoa_Milk_with_Pudding.png" alt="Valrhona Cocoa Milk with Pudding">
+      <h5>Valrhona Cocoa Milk with Pudding</h5>
+         <div class="popup" id="popup-75">
+          <div class="overlay-popup"></div>
+            <div class="content-popup">
+              <div class="close-btn" onclick="togglePopup('popup-75')">&times;</div>
+                    
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="pictures/Valrhona_Cocoa_Milk_with_Pudding.png" alt="Valrhona Cocoa Milk with Pudding">
+                </div>
+                <div class="popup-text">
+                  <h1>Valrhona Cocoa Milk with Pudding</h1>
+                  <p>Milksha's luscious cocoa milk made with premium Valrhona cocoa from France and fresh milk topped with creamy pudding.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <button onclick="togglePopup('popup-75')">SEE MORE</button>
+</div>
+
+    
+  </div>
+</div>
+
+<script>
+
+      function togglePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    if (popup) {
+      popup.classList.toggle("active");
+    }
+  }
+  function switchMenu(id, event) {
+    event.preventDefault();
+    document.querySelectorAll('.menu-section').forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    document.querySelectorAll('.menu-tabs .nav-link').forEach(link => link.classList.remove('active-tab'));
+    event.target.classList.add('active-tab');
+    window.location.hash = id;
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.replace('#', '');
+    const allSections = document.querySelectorAll('.menu-section');
+    const allTabs = document.querySelectorAll('.menu-tabs .nav-link');
+
+    allSections.forEach(section => section.classList.remove('active'));
+    allTabs.forEach(tab => tab.classList.remove('active-tab'));
+
+    const targetSection = document.getElementById(hash);
+
+    if (targetSection) {
+      targetSection.classList.add('active');
+
+      allTabs.forEach(tab => {
+        if (tab.getAttribute('href') === `#${hash}`) {
+          tab.classList.add('active-tab');
+        }
+      });
+    } else {
+      if (allSections.length > 0) allSections[0].classList.add('active');
+      if (allTabs.length > 0) allTabs[0].classList.add('active-tab');
+    }
+  });
+</script>
+
+  </body>
+</html>

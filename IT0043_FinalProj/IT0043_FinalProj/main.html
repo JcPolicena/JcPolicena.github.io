@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bootstrap Example</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="main.html">
+          <img src="pictures/Chowking.png" alt="Chowking Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#promo1">Promos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html#about-sec1">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://www.chowking.ph/wp-content/uploads/2024/06/CK-Project-VOLVO-Image-1920-x-470-px-1.jpg" class="d-block w-100" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.chowking.ph/wp-content/uploads/2024/06/CK-DARREN-1920-x-470-px_ver2.jpg" class="d-block w-100" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.chowking.ph/wp-content/uploads/2024/04/CK_BB_1920-x-470-px.jpg" class="d-block w-100" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.chowking.ph/wp-content/uploads/2024/03/CK_Milksha_1920-x-470-px.jpg" class="d-block w-100" alt="First slide">
+        </div>
+    </div>
+    </div>
+
+<!-- Promo -->
+     <div class="promo-line">
+      <div class="line-yellow"></div>
+      <div class="line-red"></div>
+
+<div class="promo" id="promo1">
+  <div class="promo-container">
+    <div class="promo-title">
+      <h1>Promo</h1>
+      <div class="line"></div>
+
+      <div class="promo-container1">
+
+        <!-- Promo 1 with clickable popup -->
+        <div class="promos">
+          <button onclick="togglePopUp('popup1')">
+            <img src="https://www.chowking.ph/wp-content/uploads/2024/10/CHOW-BOOTH.png" alt="CHOW Booth Promo">
+          </button>
+        </div>
+
+        <!-- Promo 2 (static) -->
+        <div class="promos">
+          <button onclick="togglePopUp('popup2')">
+            <img src="https://www.chowking.ph/wp-content/uploads/2024/06/CK-Project-VOLVO-Desktop-Image-686-x-550-px.jpg" alt="Volvo Promo">
+          </button>
+        </div>
+
+        <!-- Promo 3 (static) -->
+        <div class="promos">
+          <button onclick="togglePopUp('popup3')">
+            <img src="https://www.chowking.ph/wp-content/uploads/2024/03/Tipidelivery-sa-App.jpg" alt="Tipid Delivery">
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo 1 -->
+<div class="popup" id="popup1">
+  <div class="overlay-popup" onclick="togglePopUp('popup1')"></div>
+  <div class="content-popup">
+    <div class="close-btn" onclick="togglePopUp('popup1')">&times;</div>
+
+    <div class="popup-body">
+      <div class="popup-image">
+        <img src="https://www.chowking.ph/wp-content/uploads/2024/10/CHOW-BOOTH.png" alt="CHOW Booth Promo">
+      </div>
+      <div class="popup-text">
+        <h1>CHOW Booth Promo</h1>
+        <p>Enjoy exclusive discounts and freebies only at our Chow Booth event!  
+          Visit selected locations and experience Chowking’s signature favorites 
+          with exciting offers. This promo is available for a limited time — don’t miss it!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo 2 -->
+<div class="popup" id="popup2">
+  <div class="overlay-popup" onclick="togglePopUp('popup2')"></div>
+  <div class="content-popup">
+    <div class="close-btn" onclick="togglePopUp('popup2')">&times;</div>
+
+    <div class="popup-body">
+      <div class="popup-image">
+        <img src="https://www.chowking.ph/wp-content/uploads/2024/06/CK-Project-VOLVO-Desktop-Image-686-x-550-px.jpg" alt="CHOW Booth Promo">
+      </div>
+      <div class="popup-text">
+        <h1>Busog-sarap combos na pwedeng araw-arawin for only P99! Save as much as P68.</h1>
+        <p>Choose 1 main from Chao Fan Ala Carte, Chunky Asado Siopao Ala Carte, Wonton Mami Ala Carte, or Pancit Canton Ala Carte. Pair with 1 side, including Halo-Halo Supreme Small, 3pc. Buchi, Chicharap Solo, Kangkong with Bagoong, or any Medium Drink.</p>
+        <p>Promo is available all day, everyday from June 24 – August 31, 2024!</p>
+        <p>Visit any Chowking store near you and order via Dine-In or Take-Out.</p>
+        <p>Price varies. Promo cannot be combined with special discounts, as per DTI regulations.</p>
+        <p>Per DTI Fair Trade Permit No. FTEB-192066 Series of 2024</p>
+        <p>ASC Ref No. F0109N052324C</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo 3 -->
+<div class="popup" id="popup3">
+  <div class="overlay-popup" onclick="togglePopUp('popup3')"></div>
+  <div class="content-popup">
+    <div class="close-btn" onclick="togglePopUp('popup3')">&times;</div>
+
+    <div class="popup-body">
+      <div class="popup-image">
+        <img src="https://www.chowking.ph/wp-content/uploads/2024/06/CK-Project-VOLVO-Desktop-Image-686-x-550-px.jpg" alt="CHOW Booth Promo">
+      </div>
+      <div class="popup-text">
+        <h1>TipiDelivery on the CK App</h1>
+        <p>Craving Chowking? Get your favorites delivered fast with TipiDelivery—exclusive on the CK App!</p>
+        <p>Order anytime, anywhere and enjoy sulit-sarap meals delivered to your doorstep.</p>
+        <p>Available for a limited time only via the Chowking App.</p>
+        <p>Per DTI Fair Trade Permit No. FTEB-XXXXX Series of 2024.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="promo-line">
+      <div class="line-yellow"></div>
+      <div class="line-red"></div>
+
+<!-- Category Menu -->
+<div class="category_menu">
+  <div class="image-overlay">
+    <img src="https://i0.wp.com/www.angsarap.net/wp-content/uploads/2020/04/Chao-Fan-Wide.jpg?ssl=1" alt="Chao Fan">
+  </div>
+<div class="menu-content">
+  <h1 class="menu-title">Menu</h1>
+  <div class="grid-container">
+
+  <a href="menu.html#Chao_Fan" class="card-link">
+    <div class="card">
+      <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Pork-Chao-Fan-428x362-1.png" alt="ChaoFan" class="card-image">
+      <h2>Chao Fan</h2>
+    </div>
+  </a>
+
+  <a href="menu.html#Chinese-Style_Fried_Chicken" class="card-link">
+    <div class="card">
+      <img src="https://www.chowking.ph/wp-content/uploads/2023/09/1PC-Chinese-Style-Fried-Chicken-428x362-1.png" alt="Chinese-Style Fried Chicken" class="card-image">
+      <h2>Chinese-Style Fried Chicken</h2>
+    </div>
+  </a>
+
+  <a href="menu.html#Lauriat" class="card-link">
+    <div class="card">
+      <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Chinese-Style-Fried-Chicken-Lauriat-428x362-1.png" alt="Lauriat" class="card-image">
+      <h2>Lauriat</h2>
+    </div>
+  </a>
+
+  <a href="menu.html#Chef_Special" class="card-link">
+    <div class="card">
+      <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Sweet-_-Sour-Chicken-428x362-1.png" alt="Chef Specials" class="card-image">
+      <h2>Chef Specials</h2>
+    </div>
+  </a>
+
+  <a href="menu.html#Good_for_Sharing" class="card-link">
+    <div class="card">
+      <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Sweet-_-Sour-Pork-Spicy-Chao-Fan-Family-Bundle-428x362-1.png" alt="Good for Sharing" class="card-image">
+      <h2>Good for Sharing</h2>
+    </div>
+  </a>
+
+  <a href="menu.html#Siopao_and_Siomai" class="card-link">
+    <div class="card">
+      <img src="https://www.chowking.ph/wp-content/uploads/2023/09/3pc-Siopao-Box-428x362-1.png" alt="Siopao & Siomai" class="card-image">
+      <h2>Siopao & Siomai</h2>
+    </div>
+  </a>
+
+  <a href="menu.html#Noodles" class="card-link">
+    <div class="card">
+      <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Beef-Wonton-Mami-428x362-1.png" alt="Noodles" class="card-image">
+      <h2>Noodles</h2>
+    </div>
+  </a>
+
+  <a href="menu.html#Side_Dishes" class="card-link">
+    <div class="card">
+      <img src="https://www.chowking.ph/wp-content/uploads/2023/09/Chicharap-428x362-1.png" alt="Side Dishes" class="card-image">
+      <h2>Side Dishes</h2>
+    </div>
+  </a>
+
+  <a href="menu.html#Drinks" class="card-link">
+    <div class="card">
+      <img src="https://www.chowking.ph/wp-content/uploads/2023/09/coke-428x362-1.png" alt="Drinks" class="card-image">
+      <h2>Drinks</h2>
+    </div>
+  </a>
+     
+  </div>
+  </div>
+</div>
+
+<div class="about-section" id="about-sec1" >
+  <div class="about-container">
+
+    <!-- Left: Image -->
+    <div class="about-image"></div>
+
+    <!-- Right: Text -->
+    <div class="about-text">
+      <div class="about-title">ABOUT US</div>
+      <div class="about-desc">
+Chowking is a pioneer in serving great-tasting Chinese food that's affordable, fast, and satisfying. With decades of history and a loyal following, we continue to bring a blend of Eastern flavors to Filipino hearts nationwide.
+      </div>
+      <a href="learnmore.html" class="about-link">LEARN MORE ></a>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-wrapper">
+
+    <!-- Logo -->
+    <div class="footer-logo"></div>
+
+    <!-- App Badges -->
+    <div class="store-badges">
+        <a href="https://play.google.com/store/apps/details?id=com.tillster.ck_ph_mobile&hl=en&gl=US&pli=1" target="_blank" rel="noopener noreferrer">
+          <div class="store-badge google"></div>
+        </a>
+        <a href="https://apps.apple.com/ph/app/chowking-philippines/id1571445746" target="_blank" rel="noopener noreferrer">
+          <div class="store-badge apple"></div>
+        </a>
+    </div>
+
+    <!-- Links -->
+    <div class="footer-links">
+      <a href="FAQs.html" class="footer-link">FAQs</a>
+      <a href="Careers.html" class="footer-link">Careers</a>
+      <a href="Contact_Us.html" class="footer-link">Contact Us</a>
+    </div>
+
+    <!-- Social Section -->
+  <div class="footer-follow">Follow us on</div>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/ChowkingPH" target="_blank">
+        <div class="social-icon facebook"></div>
+      </a>
+      <a href="https://www.instagram.com/chowkingph" target="_blank">
+        <div class="social-icon instagram"></div>
+      </a>
+      <a href="https://x.com/chowking_ph?lang=en" target="_blank">
+        <div class="social-icon twitter"></div>
+      </a>
+  </div>
+
+    <!-- Copyright -->
+    <div class="footer-copy">©2025 Chowking. All rights reserved.</div>
+
+  </div>
+</div>
+
+ <script>
+  function togglePopUp(id) {
+    document.getElementById(id).classList.toggle('active');
+  }
+  
+</script>
+
+  </body>
+</html>
