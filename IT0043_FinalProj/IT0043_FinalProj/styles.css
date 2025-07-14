@@ -1195,6 +1195,53 @@ body.login-page {
   font-size: 20px;
 }
 
+@media (max-width: 600px) {
+  .login_wrapper {
+    padding: 100px 20px 40px;
+    border-radius: 10px;
+  }
+
+  .title_login {
+    font-size: 20px;
+  }
+
+  .input-field {
+    height: 50px;
+    font-size: 14px;
+    padding: 0 40px 0 16px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .btn-submit {
+    height: 45px;
+    font-size: 15px;
+  }
+
+  .login_form_header {
+    width: 120px;
+    height: 60px;
+  }
+
+  .login_form_header::before,
+  .login_form_header::after {
+    width: 25px;
+    height: 25px;
+  }
+
+  .login_form_header::before {
+    left: -25px;
+    box-shadow: 12px 0 0 #8B1D1D;
+  }
+
+  .login_form_header::after {
+    right: -25px;
+    box-shadow: -12px 0 0 #8B1D1D;
+  }
+}
+
 
 /* Contact Us */
     .contactus_container {
